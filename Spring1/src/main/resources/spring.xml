@@ -7,7 +7,9 @@
         
         <bean id="doc" class="dependencyDemo.Doctor">
         <property name="experience" value="12 years"></property>
+        <property name="hospital" ref="hospital"></property>
         </bean>
         <bean id="nurse" class="dependencyDemo.Nurse"></bean>
+        <bean id="hospital" class="dependencyDemo.Hospital"></bean>
         
 </beans>
