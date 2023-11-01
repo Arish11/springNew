@@ -5,7 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         
         
-        <bean id="doc" class="dependencyDemo.Doctor"></bean>
+        <bean id="doc" class="dependencyDemo.Doctor">
+        <property name="experience" value="12 years"></property>
+        </bean>
         <bean id="nurse" class="dependencyDemo.Nurse"></bean>
         
 </beans>
