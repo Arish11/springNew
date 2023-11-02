@@ -14,7 +14,8 @@ public class App {
 		
 		Doctor obj = context.getBean(Doctor.class);
 		obj.assist();
-		System.out.println("I have "+obj.getExperience()+" of experience and I work for "+obj.getHospital().name());
+		obj.setExperience("12");
+		System.out.println("I have "+obj.getExperience()+" of experience");
 		
 		Staff obj1 =  context.getBean(Nurse.class);
 		obj1.assist();

@@ -1,18 +1,11 @@
 package dependencyDemo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Doctor implements Staff {
 	
 private String experience;
-private Hospital hospital;
-
-public Hospital getHospital() {
-	return hospital;
-}
-
-public void setHospital(Hospital hospital) {
-	this.hospital = hospital;
-}
-
 public String getExperience() {
 	return experience;
 }
